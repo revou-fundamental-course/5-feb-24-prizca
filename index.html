@@ -1,49 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Konversi Suhu</title>
         <link rel="stylesheet" href="css/style.css">     
     </head>
     <body>
-        <h1>Konversi Suhu</h1>
-        <p>Masukkan suhu derajat Celcius (&deg;C) ke kotak dibawah, lalu klik tombol konversi</p>
-        <p>untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F)</p>
-        <div class="celcius-container">
-            <label for="input"><span id="input-text-temp-celcius">Celcius</span> (&deg;<span id="input-logo-temp">C</span>) :</label>
-            <input type="number" class="form-control" id="input">
+        <div class="container">
+
+            <div class="title">
+                <h1>Temperature Conventer</h1>
+                <span class="Temperature-icon"><i class="fa-solid fa-temperature-three-quarters"></i></span>
+            </div>
+    
+        <div id="celcius">
+            <input type="number" name="" placeholder="celcius">
+            <span class="icon">&#8451</span>
         </div>
-        <div class="button-container">
-            <button id="Konversi">Konversi</button>
-            <button id="Reset">Reset</button>
-            <button id="Reverse">Reverse</button>
+        <div id="fahrenheit">
+            <input type="number" name="" placeholder="fahrenheit">
+            <span class="icon">&#8457</span>
         </div>
-        <div class="fahrenheit-container"> 
-            <label for="input"><span id="input-text-temp">Fahrenheit</span> (&deg;<span id="input-logo-temp">F</span>) :</label>
-            <input type="number" class="form-control" id="input">
+    
+        <div class="button">
+            <button id="reset">Reset</button>
         </div>
-        <div class="result-container">
-            <label for="input"><span id="input-text-temp">Cara Kalkulasi</span> :</label>
-            <input type="number" class="form-control" id="input">
+        <div class="note">
+            <h4 id="title">Cara Conversi Dari Celcius (&deg;C) Ke Fahrenheit (&deg;F)</h4>
+            <p id="note-text">
+                Suhu <span class="superscript">S</span> dalam derajat Fahrenheit (&deg;F) sama dengan suhu <span class="superscript">S</span> dalam derajat Celcius (&deg;C) kali 9/5 tambah 32
+                <br><br>
+                S<span class="subscript">(&deg;F)</span> = (S<span class="subscript">(&deg;S)</span> x 9/5) + 32
+                <br><br>
+                atau
+                <br><br>
+                S<span class="subscript">(&deg;F)</span> = (S<span class="subscript">(&deg;S)</span> x 1.8) + 32
+            </p>
         </div>
-        <div>
-            <div class="navigation">
-          <a href="">Fahrenheit Celcius</a>
         </div>
-    </main>
-    <div class="formula-note">
-        <h3 id="conversion-title">Cara Conversi Dari Celcius (&deg;C) Ke Fahrenheit (&deg;F)</h3>
-        <p id="conversion-text">
-            Suhu <span class="superscript"><em>S</em> dalam derajat Fahrenheit (&deg;F)sama dengan suhu <span class="superscript"><em>S</em> dalam derajat Celcius (&deg;C) kali 9/5 tambah 32
-            <br><br>
-            S<span class="subscript">(&deg;F)</span> = (S<span class="subscript">(&deg;S)</span> x 9/5) + 32
-            <br><br>
-            atau
-            <br><br>
-            S<span class="subscript">(&deg;F)</span> = (S<span class="subscript">(&deg;S)</span> x 1.8) + 32
-        </p>
-    </div>
-        <script src="js/script.js"></script>
-    </body>
+        <script src="./js/script.js"></script>
+</body>
 </html>
